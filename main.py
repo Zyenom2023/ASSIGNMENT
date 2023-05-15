@@ -49,5 +49,19 @@ total_sum = calculate_sum(numbers)
 print("The sum of numbers is:", total_sum)
 
 #Question number five#
+def generate_even_numbers(start, end):
+    even_numbers = []
+
+    for number in range(start, end + 1):
+        if number % 2 == 0:
+            even_numbers.append(number)
+
+    return even_numbers
+
+# Example usage
+start = 4
+end = 30
+even_numbers = generate_even_numbers(start, end)
+print("Even numbers between", start, "and", end, ":", even_numbers)
 
 
