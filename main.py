@@ -13,4 +13,17 @@ def find_largest_number(numbers):
 # Example usage
 numbers = [12, 43, 7, 99, 22, 36]
 largest = find_largest_number(numbers)
+
 print("The largest number is:", largest)
+def print_primes(n):
+    # A prime number is greater than 1 and only divisible by 1 and itself
+    for num in range(2, n+1):
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            print(num)
+
+# Example usage
+print_primes(20)
+
